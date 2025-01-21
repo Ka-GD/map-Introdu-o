@@ -1,5 +1,5 @@
 
-
+import './App.scss'
 
 
 
@@ -38,34 +38,37 @@ const personagens = [
     imagem:'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_fJdva3_urSCrTb715vulLmx5z73UU0bsskKT2hLac4NMj1Nmjx33XwkHp-d9mQd7yh6XO906RiYy4a_30IwLG-N39hxbYHWn56Xu4g',
     nome:'Zeca Urubu',
     idade:100,
-    filme: 'Pica Pau', 
+    filme: 'Pica-Pau', 
     textoAlt:'imagem do zeca urubu'
   }
   
 ]
 
-  return(
+  return( 
 
     //estrutura 
     // array.map(  (item) => (codigo a ser executado)  )
    <main>
-     <h1>Lista de tarefas </h1>
+     {/* <h1>Lista de tarefas </h1> */}
 
-     {
-      tarefas.map( (item) => (
+     {/* tarefas.map( (item) => (
         <ul>
           <li>{item}</li>
         </ul>
       ))
-     }
-<section>
+     }{ */}
+      
+       <h1>Personagens</h1>
+<section >
+
+
 {
       personagens.map( (item) => (
         <div>
           <img src={item.imagem} alt={item.textoAlt} />
           <h2>{item.nome}</h2>
-          <h3>idade{item.idade}</h3>
-          <h3>filme{item.filme}</h3>
+          <h3>idade: {item.idade}</h3>
+          <h3>filme: {item.filme}</h3>
           
         </div>
       ))
